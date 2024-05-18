@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+
+
+    div.cabecalho{
+    top: -10px;
+    height: 80px;
+    width: 2200px;
+    background: rgb(35, 105, 255);
+    left: -16px;
+    right: -20px;
+    position: relative;
+    position: fixed;
+    
+    
+    }
+
+
+
+
+    div.letracompre{
+    background-color: rgb(35, 105, 255);
+    border-radius: 9px;
+    padding: 7px;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    margin-right: 3px;
+    top: 7px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    position: relative;
+    position: fixed;
+    left: 1060px;
+    text-align: center;
+    letter-spacing: 1px;
+    }  
+    div.letracompre:hover{
+    
+    margin-right: -1px;
+    scale: 1.1;
+    background-color: rgb(134, 134, 134); 
+    width: 70px;
+    height: 40px;
+    } 
+
+
+
+    @font-face {
+    font-family:"GlacialIndifference-Regular.otf" ;
+    src: url("file:///C:/Users/Uiliam/Downloads/glacial-indifference/GlacialIndifference-Regular.otf");}
+    
+    hgroup.hgroup1{
+        text-align: justify;
+        margin-left: 100px;
+        margin-right: 900px;
+        margin-top: 180px;
+        background: #e6e6e6;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 1200px;
+        position: absolute;
+        border-radius: 7px;
+    }
+    
+    
+    
+    h1.titulogoogle{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 147px;
+        position: absolute;
+        top: -10px;
+        color: aliceblue;
+        position: fixed;
+        
+    }
+    
+    div.retangulogoogleglass{
+        position: absolute;
+        background: rgb(35, 105, 255);
+        top: -5px;
+        width: 300px;
+        height: 74px;
+        left: 162px;
+        position: fixed;
+    }
+    img.foto-oculos{
+        left: -80px;
+        top: 10px;
+        margin-bottom: 10px;
+        position: static;
+        display: flex;
+        
+    }
+    
+
+    
+    button.botaodepesquisa{
+        position: absolute;
+        background: white;
+        top: 24px;
+        margin-left: 935px;        
+        display: block;
+        position: fixed;
+        border: #e6e6e6;
+    }
+    div.letrabotaopesquisar{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    button.botaodepesquisa:hover{
+        
+        
+        box-shadow: inset 0,0,0,3px rgb(161, 161, 161);
+    }
+    
+    div.letrabotaopesquisar:hover{
+        font-weight: 700;
+        scale: 1.2  ;
+        
+    }
+    
+    figcaption.legendafotooculos{
+        margin-left: -43px;
+        margin-top: 26px;
+        position: relative;
+    }
+    
+    
+    h1.subtitulofuncoes{
+        font-family: "Rubik", sans-serif;
+        background: rgb(85, 136, 248);
+        padding-left: 14px;
+        margin-right: 760px;
+        padding-top: 10px;
+        padding-right: 10px;
+        text-align: justify;
+        padding-bottom: 10px;
+        margin-left: -12px;  
+        border-radius: 30px;
+        box-shadow: 1px 1px 12px 1px black;
+         
+    }
+    h1.subtitulodesafios{
+        font-family: "Rubik", sans-serif;
+        background: rgb(85, 136, 248);
+        padding-left: 14px;
+        margin-right: 760px;
+        padding-top: 10px;
+        padding-right: 10px;
+        text-align: justify;
+        padding-bottom: 10px;
+        margin-left: -12px; 
+        border-radius: 30px; 
+        box-shadow: 1px 1px 12px 1px black;  
+    }
+    h1.subtitulofimdogoogleglass{
+        font-family: "Rubik", sans-serif;
+        background: rgb(85, 136, 248);
+        padding-left: 14px;
+        margin-right: 670px;
+        padding-top: 10px;
+        padding-right: 20px;
+        text-align: justify;
+        padding-bottom: 10px;
+        margin-left: -12px;
+        border-radius: 30px; 
+        box-shadow: 1px 1px 12px 1px black;            
+    }
+    h1.subtituloooculosdofuturo{
+        font-family: "Rubik", sans-serif;
+        background: rgb(85, 136, 248);
+        padding-left: 14px;
+        margin-right: 680px;
+        padding-top: 10px;
+        padding-right: 26px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        margin-left: -12px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 12px 1px black;
+        
+    }
+    
+    
+    div.texto1{
+        font-family: "Rubik", sans-serif;
+    }
+    div.texto2{
+        font-family: "Rubik", sans-serif;
+    }
+    div.texto3{
+        font-family: "Rubik", sans-serif;
+    }
+    div.texto4{
+        font-family: "Rubik", sans-serif;
+    }
+    
+    img.foto-oculos{
+        top: 50px;
+        box-shadow: 3px 4px 10px 3px  black;
+        left: -55px;
+        position: relative;
+        border-radius: 30px;
+    }
+    
+    div.opcoes{
+        width: 3px;
+        top: 400px;
+        margin-left: 100px;
+        border: 1px 1px 1px 1px black solid;
+        position: absolute;
+    }
+    button.opcao{
+        background-color: rgb(255, 255, 255);
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        border: #e6e6e6;
+        top: 70px;
+        margin-left: -20px;
+        position: fixed;
+        
+    }
+   
+    hr.linha1{
+        background-color: dimgrey;
+        width: 25px;
+        height: 1px;
+        padding-bottom: 1px;
+        margin-bottom: -18px;
+    }
+    hr.linha2{
+        background-color: dimgrey;
+        width: 25px;
+        height: 1px;
+        padding-bottom: 1px;
+        margin-bottom: -18px;
+    }
+    hr.linha3{
+        background-color: dimgrey;
+        width: 25px;
+        height: 1px;
+        padding-bottom: 1px;
+    }
+    div.arealetdireita{
+        background: rgba(173, 173, 173, 0.301);
+        width: 460px;
+        height: 900px;
+        left: 1400px;
+        top: 190px;
+        box-shadow: 1px 2px 7px 1px;
+        position: fixed;
+        position: absolute;
+        border-radius: 7px;
+    }
+    div.vejatambem{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: medium;
+        font-weight: 600;
+        position: relative;
+        top: 280px;
+        left: 1410px;
+        background-color: rgb(35, 105, 255);
+        width: 200px;
+        height: 60px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 1px black;
+        padding-left: 5px;
+        color: aliceblue;
+        padding-top: 5px;
+    }
+    div.circulo{
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        background-color: rgb(134, 134, 134);
+        border-radius: 50%;
+        left: 930px;
+        top: 157px;
+        
+    }
+    div.fundofaleconosco{
+        background-color: rgb(35, 105, 255);
+        height: 42.5px;
+        width: 77px;
+        top: 9px;
+        margin-left: 1200px;
+        border-radius: 9px;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        padding-top: 7px;
+        color: rgb(0, 0, 0);
+        color: white;
+        position: relative;
+        position: fixed;
+        text-align:center ;
+        letter-spacing: 1px;
+    }
+    div.fundofaleconosco:hover{
+        scale: 1.15;
+        background-color: rgb(134, 134, 134);
+    }
+    div.botaovermais{
+        background-color: rgb(35, 105, 255);
+        height: 42.5px;
+        width: 77px;
+        top: 9px;
+        margin-left: 1350px;
+        border-radius: 9px;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        padding-top: 7px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        position: relative;
+        position: absolute;
+        color: white;
+        position: fixed;
+        letter-spacing: 1px;
+    }
+    div.botaovermais:hover{
+        scale: 1.15;
+        background-color: rgb(134, 134, 134);   
+    }
+    audio.audio{
+        top: 330px;
+        margin-left: 1405px;
+        color: blue;
+        position: relative;
+
+    }
+    iframe.video{
+        position: relative;
+        top: 300px;
+        margin-left: 1410px;
+        width: 430px;
+    }
+    div.ouca{
+        position: relative;
+        top: 355px;
+        margin-left: 1415px;
+        color: aliceblue;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        white-space: nowrap;
+
+    }
+    div.blocoouca{
+        position: relative;
+        background-color: rgb(35, 105, 255);
+        width: 200px;
+        height: 60px;
+        top: 410px;
+        left: 1410px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 1px black;
+    }
+    input.inputpesquisa{
+        background: rgb(255, 255, 255);
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+        border-left:  1px black solid;
+        border-right: 1px black solid;
+        height: 29px;
+        width: 540px;
+        top: 21px;
+        margin-left: 470px;
+        position: absolute;
+        display: block;
+        position: fixed;
+        border-radius: 7px;
+    }
+    div.subt{
+        position: absolute;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: xx-large;
+        left: 120px;
+        top: 150px;
+        text-shadow: 3px 2px 3px rgb(175, 175, 175);
+        
+    }
+    div.circulo2{
+        position: relative;
+        height: 110px;
+        width: 110px;
+        background-color: rgb(170, 170, 170);
+        border-radius: 50%;
+        left: 932px;
+        top: 160px;
+    }
+    div.letracirculo{
+        position: relative;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        left: 970px;
+        top: 70;
+        font-weight: 500;
+    }
+    img.imglivro{
+        position: relative;
+        top: 70px;
+        left: 965px;
+        width: 50px;
+        height: 50px;
+    }
+    div.quetal{
+        position: relative;
+        background-color: rgb(35, 105, 255);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        top: -465px;
+        left: 1410px;
+        width: 417px;
+        height: 60px;
+        border-radius: 5px;
+        color: white;
+        padding-left: 5px;
+        box-shadow: 1px 1px 5px 1px black;
+        text-align: center;
+        align-content: space-around;
+        font-size: large;
+    }
+
+    
+    
+          

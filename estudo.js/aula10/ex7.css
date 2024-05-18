@@ -1,0 +1,36 @@
+input{
+    display: inline-block;
+    background-color: rgb(167, 167, 167);
+    color: white;
+    border-color: rgb(129, 129, 129);
+    margin: 5px;
+}
+
+input.inp1{
+    display: inline-block;
+    position: absolute;
+    left: 380px;
+    top: 80px;
+}
+input.inp2{
+    display: block;
+    position: absolute;
+    left: 380px;
+    top: 105px;
+    padding-right: 20px;
+}
+
+input.inp3{
+    display: block;
+    position: absolute;
+    left: 380px;
+    top: 130px;
+    padding-right: 20px;
+}
+input.inp4{
+    display: block;
+    position: absolute;
+    left: 380px;
+    top: 155px;
+    padding-right: 20px;
+}

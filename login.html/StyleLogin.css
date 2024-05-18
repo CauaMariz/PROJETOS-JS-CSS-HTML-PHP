@@ -1,0 +1,117 @@
+@charset "UTF-8";
+    body{
+       background-image: linear-gradient(100deg, rgb(77, 134, 156), rgb(122, 178, 178), rgb(210, 234, 255));
+    }
+    input{
+        display: block;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    fieldset{
+        position: relative;
+        width: 200px;
+        height: 270px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(139, 228, 228);
+        top: 300px;
+        left: 200px;
+        padding: 100px
+    }
+    legend{
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        text-align: center;
+        top: -30px;
+        font-weight: 600
+    }
+    button.botao1{
+        position: relative;
+        top: 230px;
+        left: -33px;
+        background-color: rgb(139, 228, 228);
+        border: none;
+        cursor: pointer;
+        font-size: small;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: left;
+    }
+    button.botao2{
+        position: relative;
+        top: 230px;
+        left: 60px;
+        background-color: rgb(139, 228, 228);
+        border: none;
+        cursor: pointer;
+        font-size: small;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: right;
+    }
+
+    button.botaogoogle{
+        position: relative;
+        background-color: rgb(139,228, 228);
+        border: none;
+        cursor: pointer;
+        left: 220px;
+        top: 120px;
+    }
+    button.botaoface{
+        position: relative;
+        background-color: rgb(139,228, 228);
+        border: none;
+        cursor: pointer;
+        left: 250px;
+        top: 120px;
+        padding: -px;
+    }
+    button.botaogithub{
+        position: relative;
+        background-color: rgb(139,228, 228);
+        border: none;
+        cursor: pointer;
+        left: 280px;
+        top: 120px;
+    }
+    button.botaocell{
+        position: relative;
+        background-color: rgb(139,228, 228);
+        border: none;
+        cursor: pointer;
+        left: 310px;
+        top: 120px;
+    }
+    script.bemvindo{
+        color: white;
+        position: relative;
+        top: 500px;
+        left: 300px;
+    }
+    button.botaogoogle:hover{
+        scale: 1.1;
+    }
+    button.botaocell:hover{
+        scale: 1.1;
+    }
+    button.botaogithub:hover{
+        scale: 1.2;
+    }
+    button.botaoface:hover{
+        scale: 1.2;
+    }
+    div#fundoa{
+        position: absolute;
+        background-color: rgb(210, 234, 255);
+        border-radius: 7px;
+        width: 100px;
+        height: 30px;
+        left: 1750px;
+        top: 30px;
+        padding-left: 5px;
+        padding-top: 6px;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.438);
+    }

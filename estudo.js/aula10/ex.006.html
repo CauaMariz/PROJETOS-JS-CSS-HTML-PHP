@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.area{
+            background-color: rgb(46, 42, 255);
+            color: white;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="area" id="areaa">
+        clique aqui
+    </div>
+
+    <script>
+        var a=document.getElementById('areaa')
+        a.addEventListener('click',clique)
+        a.addEventListener('mousemove',move)
+        a.addEventListener('mouseout',saiu)
+
+        function clique(){
+            a.innerText='BOOM'
+            a.style.background='red'
+        }
+        function move(){
+            a.innerText='OLA'
+        }
+        function saiu(){
+            a.innerText='SAIU'
+            a.style.background='blue'
+        }
+    
+    </script>
+</body>
+</html>

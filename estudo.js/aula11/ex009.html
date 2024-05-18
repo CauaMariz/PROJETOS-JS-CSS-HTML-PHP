@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vamos ver se voce é brasileiro</h1>
+    Digite seu pais: <input type="text" id="digitar">
+    <input type="button" value="Enviar" onclick="enviar()">
+
+    <script>
+        function enviar(){
+            
+            var dg=document.getElementById('digitar').value
+            if (dg=='Brasil'){
+                
+                document.write(`Parabens! Seu pais é o ${dg}! Voce tem sorte de ser Brasileiro`)
+            }   else{
+                
+                document.write(`Infelizmente seu pais nao é o Brasil:(`)
+            }
+        }
+    </script>
+</body>
+</html>

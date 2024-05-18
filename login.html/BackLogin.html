@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginModerno2K24</title>
+    <link rel="stylesheet" href="file:///C:/Users/Uiliam/Documents/login.html/StyleLogin.css">
+    <script src="Interacao.js"></script>
+    <style>
+        div.ola-nome{
+            position: absolute;
+            left: 267px;
+            top: 320px;
+            color: rgb(0, 0, 0);
+            font-size: x-large;
+            font-weight: 600;
+        }
+        div.nome-apa{
+            display: inline-block;
+        }
+        div.nome-apa:hover{
+            color: rgb(46, 95, 255);
+            
+        }
+    </style>
+</head>
+<body onload="fundo()">
+    <form method="get">
+        <fieldset>
+            
+            <input type="text" placeholder="Coloque seu Email">
+            <input type="password" placeholder="Coloque sua senha">
+            
+        </fieldset>
+    </form>
+    <!--BOTOES-->
+    <button class="botaogoogle">
+        <img src="C:\Users\Uiliam\Downloads\icons8-google-logo-48.png" alt="" class="img.google">
+    </button>
+
+    <button class="botaoface">
+        <img src="C:\Users\Uiliam\Downloads\icons8-facebook-novo-48.png" alt="" class="img.face">
+    </button>
+    <button class="botaogithub">
+        <img src="C:\Users\Uiliam\Downloads\icons8-github-48.png" alt="" class="img.github">
+    </button>
+    <button class="botaocell">
+        <img src="C:\Users\Uiliam\Downloads\icons8-phone-call-48.png" alt="" class="img.cell">
+    </button>
+
+    <button class="botao1">Esqueceu sua senha?</button>
+    <button class="botao2">Crie sua conta agora</button>
+
+    <div id="fundoa"></div>
+
+    <script>
+      
+    var nome=prompt("Ola, nos informe seu nome, por favor: ")
+
+    document.write("<div class='ola-nome'>")
+    var apa=document.write("Olá, ","<div class='nome-apa'>" +nome, "</div>" , "! Seja bem vindo!")
+    document.write("</div>")
+
+    </script>
+
+    
+   
+</body>
+</html>

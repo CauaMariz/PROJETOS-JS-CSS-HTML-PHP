@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="C:\Users\Uiliam\Documents\calculadora\partecss.css">
+</head>
+<body>
+    
+
+    <div class="caixa"></div>
+    <div class="conteudo">
+
+        <!--Parte dos Inputs-->
+        <div class="input">
+            <input type="" id="n1" placeholder="1 Núm.">
+            <input type="" id="n2" placeholder="2 Núm.">
+        </div>
+        <!--Parte dos Inputs numbers-->
+        <input type="button" value="+" onclick="som()" id="somar">
+        <input type="button" value="-" onclick="sub()" id="subtra">
+        <input type="button" value="X" onclick="mult()" id="mult">
+        <!--Input button-->
+        <input type="button" value="/" onclick="div()" id="divs">
+        <!---->
+        <div id="resu">=</div>
+    </div>
+    
+    <h1 class="cacl">Calculator</h1>
+
+    <!--Parte funcional-->
+    <script>
+        function som(){
+            document.getElementById('somar');
+            var n1=document.getElementById('n1');
+            var n2=document.getElementById('n2');
+            var resu=document.getElementById('resu');
+
+            var nn1=Number(n1.value)
+            var nn2=Number(n2.value)
+            var cont=nn1+nn2
+            resu.innerHTML=cont
+        }
+        function sub(){
+            document.getElementById('somar');
+            var n1=document.getElementById('n1');
+            var n2=document.getElementById('n2');
+            var resu=document.getElementById('resu');
+
+            var nn1=Number(n1.value)
+            var nn2=Number(n2.value)
+            var cont=nn1-nn2
+            resu.innerHTML=cont
+        }
+        function mult(){
+            document.getElementById('somar');
+            var n1=document.getElementById('n1');
+            var n2=document.getElementById('n2');
+            var resu=document.getElementById('resu');
+
+            var nn1=Number(n1.value)
+            var nn2=Number(n2.value)
+            var cont=nn1*nn2
+            resu.innerHTML=cont
+        }
+        function div(){
+            document.getElementById('somar');
+            var n1=document.getElementById('n1');
+            var n2=document.getElementById('n2');
+            var resu=document.getElementById('resu');
+
+            var nn1=Number(n1.value)
+            var nn2=Number(n2.value)
+            var cont=nn1/nn2
+            resu.innerHTML=cont
+        }
+    </script>
+    <!---->
+</body>
+</html>
