@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste14</title>
+  <script src="teste14.js"></script>
+  <link rel="stylesheet" href="teste14.css">
+</head>
+<body>
+
+  <section>
+    <form action="get">
+      <p id="title">Insira seus dados</p>
+      <legend></legend>
+      <fieldset>
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="number" id="idade" placeholder="Idade">
+        <input type="text" id="pais" placeholder="Pais">
+        <input type="text" id="estado" placeholder="Estado">
+      </fieldset>
+    </form>
+    <input type="button" value="Enviar" onclick="enviar()" id="enviar">
+    <div id="campo"></div>
+    <button onclick="limpardados()" id="limpar">Limpar dados</button>
+  </section>
+  
+</body>
+</html>

@@ -1,0 +1,83 @@
+fieldset{
+  width: 300px;
+  height: 300px;
+}
+input{
+  position: relative;
+  width: 280px;
+  margin-top: 20px;
+  top: 60px;
+  border: none;
+  box-shadow: 1px 1px 5px 1px rgb(46, 46, 46);
+  border-radius: 3px;
+  padding-left: 5px;
+  outline: none;
+  transition: 0.8s;
+}
+input:hover{
+  background-color: rgb(206, 206, 206);
+  transition: 0.8s;
+}
+::placeholder{
+  color: rgb(28, 136, 33);
+}
+fieldset{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  border: none;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.568);
+  border-radius: 5px;
+}
+#enviar{
+  position: relative;
+  cursor: pointer;
+  color: aliceblue;
+  width: 60px;
+  background-color: rgb(54, 134, 255);
+  top: -100px;
+  left: 4%;
+  transition: 0.8s;
+}
+#enviar:hover{
+  transition: 0.8s;
+  background-color: rgb(11, 56, 255);
+}
+#title{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: x-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section{
+  position: absolute;
+  top: 200px;
+  left: 40%;
+}
+.fechar-btn{
+  transition: 0.8s;
+}
+.fechar-btn:hover{
+  transition: 0.8s;
+  background-color: rgb(11, 56, 255);
+  color: white;
+}
+#limpar{
+  position: absolute;
+  border: none;
+  top: 270px;
+  left: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: aliceblue;
+  width: 55px;
+  background-color: rgb(54, 134, 255);
+  height: 30px;
+  transition: 0.8s;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.568);
+}
+#limpar:hover{
+  transition: 0.8s;
+  background-color: rgb(11, 56, 255);
+  color: white;
+}
