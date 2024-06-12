@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template com Cabeçalho</title>
+    <!--CONEXAO DO CSS COM O HTML-->
+    <link rel="stylesheet" href="style/template.css">
+    <script src="parte.js"></script>
+    <link rel="stylesheet" href="parte.css">
+</head>
+
+<body style="background-color: rgb(65, 140, 190);">
+
+
+    <!--CABECALHO-->
+    <div class="cabecalho">
+       
+        <a href="teste.html" id="menu" class="menu">
+            LOGIN
+        </a>
+        <a href="teste.html" id="menu" class="menu">
+            MENU
+        </a>
+        <a href="teste.html" id="menu" class="menu">
+            HOME
+        </a>
+
+        <div class="logo">
+            LOGO
+        </div>
+
+        <div class="barra-pesquisa">
+            <div class="barra">
+
+                <input type="text" id="barra-pesquisa" placeholder="Buscar..."/>
+                
+
+            </div>
+            <div class="barra-img">
+                <img src="img/seo-1970475_1920.png" id="img-pesquisa" alt="Buscar"/>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="fundo"></div>
+
+    <section>
+        <form action="get">
+          <p id="title">Insira seus dados</p>
+          <legend></legend>
+          <fieldset>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="number" id="idade" placeholder="Idade">
+            <input type="text" id="pais" placeholder="Pais">
+            <input type="text" id="estado" placeholder="Estado">
+          </fieldset>
+        </form>
+
+        <input type="button" value="Enviar" onclick="enviar()" id="enviar">
+        <div id="campo"></div>
+        <button onclick="limpardados()" id="limpar">Limpar dados</button>
+      </section>
+
+
+</body>
+</html>
