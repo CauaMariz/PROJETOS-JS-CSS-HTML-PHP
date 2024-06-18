@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="StyleLogin.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="back.js"></script>
+    <style>
+              div.ola-nome{
+            position: absolute;
+            color: rgb(0, 0, 0);
+            font-size: x-large;
+            font-weight: 600;
+        }
+        div.nome-apa{
+            display: inline-block;
+        }
+        div.nome-apa:hover{
+            color: rgb(252, 252, 252);
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <a href="home.html">Project Two</a>
+        </div>
+
+        <section>
+            <div id="menuu">
+    
+            </div>
+            <button onclick="vermenu()" id="menu" style="cursor: pointer;">Ver opcoes</button>
+        </section>
+
+        <form method="get">
+            <fieldset>
+                
+                <input type="text" placeholder="Coloque seu Email">
+                <input type="password" placeholder="Coloque sua senha">
+                
+            </fieldset>
+        </form>
+        <!--BOTOES-->
+        <button class="botaogoogle">
+            <img src="C:\Users\Uiliam\Downloads\icons8-google-logo-48.png" alt="" class="img.google">
+        </button>
+    
+        <button class="botaoface">
+            <img src="C:\Users\Uiliam\Downloads\icons8-facebook-novo-48.png" alt="" class="img.face">
+        </button>
+        <button class="botaogithub">
+            <img src="C:\Users\Uiliam\Downloads\icons8-github-48.png" alt="" class="img.github">
+        </button>
+        <button class="botaocell">
+            <img src="C:\Users\Uiliam\Downloads\icons8-phone-call-48.png" alt="" class="img.cell">
+        </button>
+    
+        <button class="botao1">Esqueceu sua senha?</button>
+        <button class="botao2">Crie sua conta agora</button>
+    
+        <div id="fundoa"></div>
+    
+        <script>
+          
+        var nome=prompt("Ola, nos informe seu nome, por favor: ")
+    
+        document.write("<div class='ola-nome'>")
+        var apa=document.write("Olá, ","<div class='nome-apa'>" +nome, "</div>" , "! Seja bem vindo!")
+        document.write("</div>")
+    
+        </script>
+    
+
+    </header>
+</body>
+</html>
