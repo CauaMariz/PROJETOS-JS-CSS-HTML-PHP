@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aliceblue;
+            height: 10vh;
+        }
+
+        div {
+            margin-left: 5%;
+            margin-top: 10%
+        }
+
+        .seta {
+            display: flex;
+            margin: 0 auto;
+            margin-top: -30%;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .img1 {
+            width: 500px;
+            height: 500px;
+            transition: opacity 1s ease-in-out;
+        }
+
+        header {
+            height: 80px;
+            background-color: yellowgreen;
+        }
+
+        h3,
+        p {
+            padding-left: 1%;
+            padding-top: 1%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h3>Troca de Imagens</h3>
+        <p>Projeto 06/08/2024</p>
+    </header>
+
+    <div><img src="imgs/pexels-alfomedeiros-19315666.jpg" alt="" class="img1"></div>
+
+    <div onclick="clicar()"><img src="imgs/seta-para-a-direita.png" alt="" class="seta"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
