@@ -13,9 +13,20 @@ async function tempo() {
                 const temperatura = ver.current.temp_c;
                 const hora = ver.location.localtime;
                 const vento = ver.current.wind_mph;
-                campo.innerHTML = ('Temperatura atual: ' + temperatura + 'C ' + '<br>' + 'Hora atual: ' + hora + '<br>' + 'Velocidade do vento em MPH: ' + vento + 'MPH' )
+                
+                campo.style.fontFamily = 'Arial'
+                campo.style.maxWidth = '260px'
+                campo.style.backgroundColor = 'rgb(34, 126, 34)'
+                campo.style.color = 'white'
+                campo.style.fontSize = '20px'
+                campo.style.padding = '20px'
+                campo.style.borderRadius = '10px'
+                campo.innerHTML = ('Temperatura atual: ' + temperatura + 'C ' + '<br>' + 'Hora atual: ' + hora + '<br>' + 'Velocidade do vento em MPH: ' + vento + 'MPH')
+
                 let btn = document.createElement('button')
                 btn.textContent = 'Recarregar'
+                btn.id = 'BtnLoad'
+
                 btn.addEventListener('click', () => {
                     location.reload()
                 })
