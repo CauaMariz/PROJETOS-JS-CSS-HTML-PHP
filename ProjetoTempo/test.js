@@ -22,24 +22,31 @@ async function tempo() {
                 campo.style.fontSize = '20px'
                 campo.style.padding = '20px'
                 campo.style.borderRadius = '10px'
-                campo.style.lineHeight='6vh'
-                
+                campo.style.lineHeight = '6vh'
+               
+                campo.style.display="flex"
+                campo.style.margin="0 auto"
+
                 campo.innerHTML = ('Temperatura atual: ' + temperatura + 'C ' + '<br>' + 'Hora atual: ' + hora + '<br>' + 'Velocidade do vento em MPH: ' + vento + 'MPH')
+                x=true
 
                 let btn = document.createElement('button')
                 btn.textContent = 'Recarregar'
                 btn.id = 'BtnLoad'
 
                 btn.addEventListener('click', () => {
-                    location.reload()
+                    campo.remove()
+                    btn.remove()
+                    return x = false
                 })
                 document.body.appendChild(btn)
-
+                document.body.appendChild(campo)
+              
             }
 
         }
         x = true
-        return x
+
     }
     catch (error) {
         campo.innerHTML = (error)
