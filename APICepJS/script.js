@@ -1,25 +1,48 @@
-async function Func(){
-    const url=await fetch('https://viacep.com.br/ws/05576100/json/')
-    const urljson=await url.json()
-    let campo=document.querySelector("#campo")
+let campo = document.querySelector("#campo")
 
-    if (url.ok){
+let cepp = document.querySelector("#cep")
 
-        if (campo.classList.contains("Close")){
-            campo.classList.remove("Close")
-            campo.classList.add("Ver")
+x = false
+function cep() {
 
-            setTimeout(()=>{
-                campo.innerHTML='Nome  da rua: '+ JSON.stringify(urljson.logradouro)
-            },330)
+    let btn = document.createElement("button")
+    btn.id = 'btn'
+    btn.textContent = 'Ver Cep'
+
+    if (!x) {
+
+        document.body.appendChild(btn)
+
+        btn.addEventListener('click', async () => {
+
+            const url = await fetch('https://viacep.com.br/ws/05576100/json/')
+            const urljson = await url.json()
+
+            if (url.ok) {
+
+                if (campo.classList.contains("Close")) {
+
+                    campo.classList.remove("Close")
+                    campo.classList.add("Ver")
+
+                    setTimeout(() => {
+                        campo.innerHTML = 'Nome  do seu Cep: ' + cepp.value + JSON.stringify(urljson.logradouro)
+                    }, 330)
+                }
+                else {
+                    campo.innerHTML = ''
+                    setTimeout(() => {
+                        campo.classList.remove("Ver")
+                        campo.classList.add("Close")
+                    }, 100)
+                }
+
+            }
         }
-        else{
-            campo.innerHTML=''
-            setTimeout(()=>{
-                campo.classList.remove("Ver")
-                campo.classList.add("Close")
-            },100)
-        }
-      
+
+        )
+
+        x = true
     }
 }
+
