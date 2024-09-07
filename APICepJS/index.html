@@ -12,6 +12,9 @@
             padding: 0;
             box-sizing: border-box;
         }
+        body{
+            background-color: #dedede;
+        }
 
         .Ver {
             height: 100px;
@@ -49,12 +52,42 @@
         .cabecalho {
             width: 100%;
             height: 80px;
-            background-color: rgb(214, 255, 119);
+            background-color: rgb(0, 122, 166);
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 30px;
             padding-left: 1%;
-            font-weight: 600;
+            font-weight: 700;
             box-shadow: 0 0 8px 0 black;
+            color: aliceblue;
+        }
+
+        #cep {
+            transition: 0.6s;
+            border: none;
+            background-color: rgb(216, 216, 216);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px 1px rgb(173, 173, 173);
+            margin-left: 1%;
+        }
+
+        .textCep {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 1%;
+            font-size: 20px;
+            display: block;
+            font-weight: 600;
+        }
+
+        #btn {
+            border: none;
+            background-color: rgb(163, 163, 163);
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 15px;
+            color: white;
+            margin-left: 1%;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -63,18 +96,18 @@
 
     <div class="cabecalho">Procure seu CEP!</div>
 
-    <label for="cep">Digite seu CEP em apenas numeros: </label>
+    <label for="cep" class="textCep">Digite seu CEP em apenas números: </label>
     <input type="number" id="cep">
 
 
 
-    <button onclick="cep()" class="btn">Conferir</a>
+    <button onclick="cep()" class="btn">Conferir</button>
 
 
 
-        <div id="campo"></div>
+    <div id="campo"></div>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
