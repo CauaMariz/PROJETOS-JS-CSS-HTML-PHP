@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
         * {
             margin: 0;
@@ -27,13 +25,7 @@
             transition: 0.6s;
             margin-left: 1%;
             padding-bottom: 8%;
-        }
-
-        .Close {
-            transition: 0.6s;
-            height: 0;
-            max-width: 0;
-            margin-left: 1%;
+            margin-top: 1%;
         }
 
         .btn {
@@ -67,8 +59,10 @@
             background-color: rgb(216, 216, 216);
             padding: 5px;
             border-radius: 5px;
-            box-shadow: 1px 1px 5px 1px rgb(173, 173, 173);
+            box-shadow: 1px 1px 6px 1px rgba(90, 90, 90, 0.692);
             margin-left: 1%;
+            margin-bottom: 2%;
+            margin-top: 10%;
         }
 
         .textCep {
@@ -81,7 +75,8 @@
 
         #btn {
             border: none;
-            background-color: rgb(163, 163, 163);
+            background-color: rgb(0, 122, 166);
+            box-shadow: 1px 1px 6px 1px rgba(90, 90, 90, 0.692);
             padding: 5px;
             border-radius: 5px;
             font-size: 15px;
@@ -89,25 +84,53 @@
             margin-left: 1%;
             cursor: pointer;
         }
+        .container{
+            background-color: rgb(4, 81, 109);
+            width: 400px;
+            height: 200px;
+            margin-top: 1%;
+            margin-left: 1%;
+            border-radius: 30px;
+
+        }
+        .container input{
+            display: flex;
+            position: relative;
+            top: 1%;
+            left: 4%;
+        }
+        .container button{
+            position: relative;
+            top: 1%;
+            left: 4%;
+        }
+        .container label{
+            display: flex;
+            position: relative;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: aliceblue;
+            margin-left:5%;
+            top: 18%;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        #campo{
+            border-radius: 10px;
+            margin-left: 1%;
+            width: 600px;
+            transition: 0.6s;
+        }
     </style>
 </head>
-
 <body>
-
-    <div class="cabecalho">Procure seu CEP!</div>
-
-    <label for="cep" class="textCep">Digite seu CEP em apenas números: </label>
-    <input type="number" id="cep">
-
-
-
-    <button onclick="cep()" class="btn">Conferir</button>
-
-
+    <div class="cabecalho">Procure seu CEP</div>
+    <div class="container">
+        <label for="">CEP</label>
+        <input type="number" id="cep" placeholder="Insira seu CEP aqui.">
+        <button onclick="Ver()" id="btn">Ver cep</button>
+    </div>
 
     <div id="campo"></div>
-
-    <script src="script.js"></script>
+    <script src="newAPICEP.js"></script>
 </body>
-
 </html>
