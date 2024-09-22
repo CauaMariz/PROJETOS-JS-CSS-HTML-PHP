@@ -1,3 +1,17 @@
+@keyframes animacaoImgs {
+    0% {
+        transform: perspective(0) translateZ(0);
+    }
+
+    10% {
+        transform: perspective(0.1px) translateZ(0.1px);
+    }
+
+    100% {
+        transform: perspective(0) translateZ(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +33,7 @@ nav {
     padding-right: 30px;
     padding-top: 10px;
     width: 400px;
-    
+
 }
 
 .title {
@@ -69,7 +83,7 @@ a {
     top: 48%;
     font-family: "Radio Canada Big", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     color: aliceblue;
     max-width: 200px;
 }
@@ -84,6 +98,7 @@ a {
     button {
         color: aliceblue;
         font-family: "Radio Canada Big", sans-serif;
+        background-color: rgb(46, 137, 255);
     }
 }
 
@@ -134,8 +149,8 @@ section button {
 
 section button:hover {
     transition: 0.6s;
-    background-color: rgb(85, 85, 85);
     scale: 1.1;
+    border: 3px solid rgb(37, 114, 255);
 }
 
 .BarraLateral {
@@ -152,7 +167,7 @@ section button:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 600;
-    color: rgb(211, 211, 211);
+    color: azure;
     padding-left: 1%;
     margin-left: 12%;
     margin-top: 5%;
@@ -182,7 +197,7 @@ section button:hover {
 .BarraLateral h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 12%;
-    color: rgb(211, 211, 211);
+    color: azure;
     font-size: 30px;
     font-weight: 500;
     border-bottom: 3px solid rgb(136, 174, 255);
@@ -225,21 +240,28 @@ section button:hover {
     box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.384);
     border-radius: 13px;
     transition: 0.6s;
+    perspective: 1000px;
 }
 
 .img1Projeto:hover {
     transition: 0.6s;
     box-shadow: 1px 1px 10px 1px rgb(43, 43, 43);
+    animation-name: animacaoImgs;
+    animation-duration: 13s;
 }
 
 .img2Projeto:hover {
     transition: 0.6s;
     box-shadow: 1px 1px 10px 1px rgb(43, 43, 43);
+    animation-name: animacaoImgs;
+    animation-duration: 13s;
 }
 
 .img3Projeto:hover {
     transition: 0.6s;
     box-shadow: 1px 1px 10px 1px rgb(43, 43, 43);
+    animation-name: animacaoImgs;
+    animation-duration: 13s;
 }
 
 .cabecalho {
@@ -270,16 +292,19 @@ section button:hover {
 }
 
 .img1Projeto {
+    transition: 0.6s;
     width: 400px;
     height: 250px;
 }
 
 .img2Projeto {
+    transition: 0.6s;
     width: 400px;
     height: 250px;
 }
 
 .img3Projeto {
+    transition: 0.6s;
     width: 400px;
     height: 250px;
 }
@@ -320,9 +345,26 @@ section button:hover {
     border-radius: 5px;
     padding: 0 10px 0 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 500;
-    background-color: rgb(204, 204, 204);
+    font-weight: 600;
+    background-color: rgb(230, 230, 230);
     margin-bottom: 10px;
+    padding: 6px;
+}
+
+.SobreVerProjetos {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+}
+
+.SobreVerProjetos:hover {
+    border: 3px solid rgb(37, 114, 255);
 }
 
 .imgContato {
@@ -338,8 +380,8 @@ section button:hover {
 #setaVejaMais {
     position: relative;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     top: 10vh;
     left: 5vw;
     transition: 0.6s;
@@ -354,10 +396,11 @@ section button:hover {
     display: flex;
     color: aliceblue;
     font-family: "Radio Canada Big", sans-serif;
-    font-size: 140px;
+    font-size: 150px;
+    line-height: 200px;
     justify-content: center;
     margin-top: 34vh;
-    background: linear-gradient(90deg, rgb(0, 69, 158), rgb(86, 159, 255), rgb(86, 159, 255), white);
+    background: linear-gradient(150deg, rgb(0, 69, 158), rgb(86, 159, 255), rgb(86, 159, 255),rgb(114, 174, 253),rgb(126, 182, 255),rgb(139, 190, 255), white);
     background-size: auto;
 }
 
@@ -365,10 +408,11 @@ section button:hover {
     display: flex;
     color: aliceblue;
     font-family: "Radio Canada Big", sans-serif;
-    font-size: 140px;
+    font-size: 150px;
+    line-height: 210px;
     justify-content: center;
     margin-top: 34vh;
-    background: linear-gradient(90deg, rgb(0, 69, 158), rgb(86, 159, 255), rgb(86, 159, 255), white);
+    background: linear-gradient(150deg, rgb(0, 69, 158), rgb(86, 159, 255), rgb(86, 159, 255),rgb(114, 174, 253),rgb(126, 182, 255),rgb(139, 190, 255), white);
     background-size: auto;
 }
 
@@ -432,4 +476,19 @@ section button:hover {
 .MenuBtn:hover {
     transition: 0.5s;
     scale: 1.2;
+}
+.TextVejaSobre{
+    font-family: "Radio Canada Big", sans-serif;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40vh;
+    justify-content: center;
+    line-height: 80px;
+    border-radius: 10px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(7, 72, 170);
+    width: 600px;
 }
