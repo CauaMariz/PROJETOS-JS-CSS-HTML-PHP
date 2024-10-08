@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label{
+      color: red;
+    }
+    .Ver{
+      height: 100px;
+      width: 100px;
+      background-color: #dedede;
+    }
+  </style>
 </head>
 <body>
-    Cep:<input type="number" id="cep">
-    <button onclick="Ver()">Ver cep</button>
+  
+    
+    <label for="CEP" id="label"></label> <br>
+    <input type="number" maxlength="9" placeholder="Digite seu CEP" minlength="8" id="CEP">
+    <button onclick="Ver()">Enviar</button>
 
-    <script src="newAPICEP.js"></script>
+    <div id="campo"></div>
+
+  <script src="teste.js"></script>
 </body>
 </html>
