@@ -1,31 +1,43 @@
 
-//OTIMIZAR TODO O CODIGO
-let cep = document.querySelector("#cep")
-async function VerCep() {
 
+let campo = document.querySelector('#campo');
+let cep = document.querySelector("#CEP") ?? "";
+let label = document.querySelector('label')
 
-    if (cep.value == '') {
-        document.write("Algo nao esta certo")
-    }
-
-    else {
-        try {
-
-            const url = await fetch(`https://viacep.com.br/ws/${cep.value}/json/`)
-            const urljson = await url.json()
-
-            if (url.ok && !urljson.erro) {
-                document.write(JSON.stringify(urljson))
-            }
-            else {
-                document.write("Talvez seu cep esteja errado:(")
-            }
-        }
-        catch (erro) {
-            document.write("Talvez seu cep esteja errado:(")
-        }
-    }
+function ExibirMensagem(mensagem) {
+  campo.innerHTML = campo.classList.contains('Ver') ? mensagem : "";
 }
+
+
+async function CodigoCEP() {
+
+  const url = await fetch(`https://viacep.com.br/ws/${cep.value}/json/`);
+  const urljson = await url.json();
+
+  if (url.ok && !urljson.erro) {
+
+    label.innerHTML = ''
+
+    ExibirMensagem('Número do seu CEP: ' + '<b>' + cep.value + '</b>' + '<br>' + '. Rua: ' + '<b>' + JSON.stringify(urljson.logradouro) + '</b>' + '<br>' + '. Bairro: ' + '<b>' + JSON.stringify(urljson.bairro) + '</b>' + '<br>' + '. Cidade: ' + '<b>' + JSON.stringify(urljson.localidade) + '</b>' + '<br>' + '. Estado: ' + '<b>' + JSON.stringify(urljson.estado) + '</b>');
+  }
+  else {
+    campo.innerHTML = '';
+    label.innerHTML = 'Talvez seu CEP esteja errado.';
+  }
+}
+
+function validarCEP(cep) {
+  const validacao = /^\d{8}$/;
+  return validacao.test(cep);
+}
+
 function Ver() {
-    VerCep()
+  if (!validarCEP(cep.value)) {
+    campo.innerHTML = '';
+    label.innerHTML = 'CEP inválido. Deve conter 8 dígitos numéricos.';
+  } else {
+    label.innerHTML = '';
+    campo.classList.toggle('Ver');
+    CodigoCEP();
+  }
 }
