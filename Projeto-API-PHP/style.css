@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  min-height: 90px;
+  padding: 2% 0 2% 2%;
+  background-color: rgb(0, 103, 187);
+}
+header p,h3{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: aliceblue;
+}
+header h3{
+  font-size: 24px;
+}
+.bloco1{
+  border: 1px solid rgb(51, 51, 51);
+  width: 100%;
+  height: auto;
+  padding-left: 2%;
+}
+.bloco1 h4{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+}
+.bloco1 p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 600;
+}
+.EventosDeHoje{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+  margin-left: 2%;
+  background-color: rgb(0, 103, 187);
+  color: aliceblue;
+  border-radius: 20px;
+  width: 250px;
+  padding: 0.6%;
+  display: flex;
+}
