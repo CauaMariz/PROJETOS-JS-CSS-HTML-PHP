@@ -1,0 +1,627 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  height: 200vh;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px 0 grey;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+
+.ParteCima {
+  display: inline;
+  margin: 0 auto;
+}
+
+.menu li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: rgb(56, 55, 55);
+  font-weight: 600;
+  margin: 8px;
+  list-style: none;
+  display: inline;
+  transition: 0.4s ease-in-out;
+}
+
+.menu a:hover {
+  transition: 0.4s ease-in-out;
+  color: rgb(241, 0, 0);
+}
+
+
+
+.Titulo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 26px;
+  margin-left: 1%;
+  color: rgb(53, 53, 53);
+}
+
+.Titulo span {
+  color: rgb(231, 35, 0);
+}
+
+.span2 {
+  color: greenyellow;
+}
+
+.ImgComidaHome {
+  margin-right: 10%;
+  width: 900px;
+  float: right;
+}
+
+.FraseHome {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 3%;
+  color: rgb(86, 156, 5);
+  font-size: 36px;
+}
+
+@media (max-width:1610px) {
+  .ImgComidaHome {
+    width: 820px;
+  }
+}
+
+@media (max-width:1500px) {
+  .ImgComidaHome {
+    width: 700px;
+  }
+}
+
+@media (max-width:1400px) {
+  .ImgComidaHome {
+    width: 600px;
+  }
+}
+
+@media (max-width:1300px) {
+  .ImgComidaHome {
+    width: 550px;
+  }
+}
+
+.BarraLateral {
+  float: right;
+  width: 160px;
+  height: auto;
+  box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.555);
+  padding-bottom: 1%;
+  border-bottom-left-radius: 10px;
+}
+
+.FraseBarraLateral {
+  margin-top: 4%;
+  padding-left: 5%;
+  border-bottom: 1px solid rgba(36, 36, 36, 0.473);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 6%;
+}
+
+.PostagensBarraLateral {
+  display: block;
+
+  width: 160px;
+  height: auto;
+}
+
+.Postagem1Barralateral {
+  margin: 0 auto;
+  margin-top: 20%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+  padding-top: 10px;
+  width: 140px;
+  height: 270px;
+  box-shadow: 1px 1px 5px 1px rgb(165, 165, 165);
+  
+}
+
+.Postagem2Barralateral {
+  margin: 0 auto;
+  margin-top: 50%;
+  padding-bottom: 6%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+  padding-top: 10px;
+  width: 140px;
+  max-height: 80vh;
+  box-shadow: 1px 1px 5px 1px rgb(165, 165, 165);
+}
+
+.IconPostagemBarraLateral {
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  margin: 0 auto;
+  top: 2%;
+  width: 40px;
+}
+
+.IconPostagemBarraLateral2 {
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  margin: 0 auto;
+  top: 6.5%;
+  height: 42px;
+  width: 40px;
+}
+
+.TituloPostagemBarraLateral1 {
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 6px;
+  color: rgb(46, 46, 46);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  background-color: rgb(214, 214, 214);
+  width: 120px;
+ 
+}
+
+.TituloPostagemBarraLateral2 {
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 6px;
+  color: rgb(46, 46, 46);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  background-color: rgb(214, 214, 214);
+  width: 120px;
+}
+
+.TextoPostagemBarraLeteral1 {
+  font-size: 14px;
+  padding-top: 5px;
+
+  border-radius: 5px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  background-color: rgb(230, 230, 230);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 17px;
+}
+
+.NomePerfilPostagemBarraLateral1 {
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 2.5%;
+}
+
+.NomePerfilPostagemBarraLateral2 {
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 7.5%;
+}
+
+.TextoPostagemBarraLeteral2 {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  background-color: rgb(230, 230, 230);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 17px;
+}
+
+.IconsPostBarralateral2 {
+
+  display: inline;
+  margin: 15px;
+}
+
+.IconsPostBarralateral2 img {
+  margin-left: 5%;
+  width: 18px;
+}
+
+.IconsPostBarralateral2 img:hover {
+  cursor: pointer;
+}
+
+.VerMaisPostBarraLateral2 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 55px;
+  font-size: 13px;
+  color: rgb(26, 125, 238);
+}
+
+.VerMaisPostBarraLateral2:hover {
+  text-decoration: underline;
+}
+
+.MudaIconSalvar {
+  animation: AnimacaoIconSalvar 0.4s ease-in-out;
+  transition: 0.6s;
+  background-size: 19px;
+  background-image: url(imgs/icons8-fita-de-bookmark-30.png);
+}
+
+@keyframes AnimacaoIconSalvar {
+  0% {
+    transition: 0.6s;
+    scale: 1;
+  }
+
+  100% {
+    transition: 0.6s;
+    scale: 1.3;
+  }
+}
+
+.Formulario {
+  margin: 0 auto;
+  display: block;
+  background-color: rgb(85, 138, 25);
+  width: 600px;
+  height: auto;
+  padding-top: 1vw;
+  border-radius: 20px;
+  margin-top: 10vh;
+}
+
+.Formulario div {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.PartePrincipalLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TituloCadastrar {
+  font-size: 60px;
+  text-align: center;
+}
+
+.BtnCadastrar {
+  display: flex;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 5px 1px rgb(66, 66, 66);
+  margin: 0 auto;
+}
+
+.ReceitasHome {
+  display: inline-block;
+  width: 100%;
+  max-height: 100vh;
+  margin-top: 10vw;
+}
+
+.TitleReceitasHome {
+  display: flex;
+  height: 100px;
+  margin-left: 40vw;
+  margin-top: 40%;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 45px;
+  color: rgb(86, 156, 5);
+}
+
+.Rodape {
+  display: flex;
+  height: auto;
+  padding-bottom: 0.5%;
+  width: 100%;
+  box-shadow: 0 0 5px 0 grey;
+  justify-content: space-between;
+}
+
+.ReceitasHome2 div{
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  left: 5%;
+  box-shadow: 1px 1px 5px 1px grey;
+  border-radius: 10px;
+}
+.ReceitasHome2{
+  width: 100%;
+  display: block;
+}
+.BannerHome{
+  display: flex;
+  transition: 0.7s;
+  width: 1500px;
+  height: 700px;
+  box-shadow: 1px 1px 5px 1px rgb(97, 97, 97);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.BannerHome img{
+  width: 1500px;
+  height: 700px;
+  border-radius: 10px;
+}
+.Rodape div{
+  width: 200px;
+  display: inline;
+
+}
+.Rodape div a{
+  display: block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 5%;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+}
+.Rodape a:hover{
+  text-decoration: underline;
+}
+.ReceitasHome2 div{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+.Rodape div h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 4%;
+}
+.Bloco1{
+  margin-left: 3%;
+}
+.Bloco4 img{
+  transition: 0.6s;
+  cursor: pointer;
+  margin: 2%;
+}
+.Bloco4 img:hover{
+  transition: 0.4s;
+  scale: 1.1;
+}
+@media (max-width:1820px){
+  .BannerHome,.BannerHome img{
+    width: 800px;
+    height: 400px;
+    
+  }
+}
+.grupo-icon-login{
+  justify-content: space-between;
+}
+.grupo-icon-login img{
+  cursor: pointer;
+  transition: 0.4s;
+}
+.grupo-icon-login img:hover{
+  transition: 0.4s;
+  transform: translateY(-5%);
+
+}
+.imgBoloDeFubaHome {
+  width: 330px;
+  border-radius: 6px;
+
+}
+
+.TituloReceita1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  padding-bottom: 5%;
+}
+
+.linkReceita1:hover {
+  text-decoration: underline;
+}
+
+.linkReceita1 {
+  position: relative;
+  color: rgb(0, 119, 255);
+  top: 6%;
+}
+
+.BannersHome {
+  width: 935px;
+  height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 40vw;
+  transform: translate(-50%, 50%);
+  box-shadow: 1px 1px 6px 1px grey;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+
+.slides input {
+  display: none;
+}
+
+.imgs {
+  width: 25%;
+  transition: .6s;
+}
+
+.imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.nav .navs {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  margin: 6px;
+  cursor: pointer;
+  transition: .9s;
+}
+
+#radio-1:checked~.one {
+  margin-left: 0;
+}
+
+#radio-2:checked~.one {
+  margin-left: -25%;
+}
+
+#radio-3:checked~.one {
+  margin-left: -50%;
+}
+
+.nav .navs:hover {
+  background-color: aliceblue;
+  border: 1px solid aliceblue;
+}
+
+.BarraLateral {
+  box-shadow: 0 0 2px 0 rgba(128, 128, 128, 0.555);
+}
+
+.ReceitasHome2 {
+  margin-top: 40vw;
+  width: 100%;
+  border: 1px solid rgb(255, 251, 251);
+  justify-content: space-around;
+}
+
+.ReceitasHome2 div {
+  justify-self: center;
+}
+
+@media (max-width: 1300px) {
+  .BannersHome {
+    width: 600px;
+    height: 400px;
+    top: 70vw;
+  }
+
+  .slides {
+    display: flex;
+    width: 490%;
+    height: 100%;
+  }
+}
+
+.BarraLateral {
+  max-height: 100vw;
+}
+
+.blocoUsuarioHeader {
+  display: inline-flex;
+  float: right;
+  list-style: none;
+  gap: 1vw;
+}
+
+.blocoUsuarioHeader li {
+  margin: 0;
+  padding: 0;
+  margin-right: 2vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  transition: .6s;
+  border-radius: 6px;
+}
+
+.blocoUsuarioHeader {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.blocoUsuarioHeader li {
+  position: relative;
+  overflow: hidden;
+}
+
+.blocoUsuarioHeader li a {
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+  color: black;
+  text-decoration: none;
+}
+
+.blocoUsuarioHeader li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: tomato;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s ease-in-out;
+  z-index: 0;
+}
+
+.blocoUsuarioHeader li:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.blocoUsuarioHeader li:hover a {
+  color: white;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 8vw;
+}
+
+.Titulo {
+  margin-left: 2vw;
+}
