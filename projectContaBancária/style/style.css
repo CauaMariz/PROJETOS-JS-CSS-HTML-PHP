@@ -1,0 +1,92 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  width: 100%;
+  background-color: rgb(240, 196, 0);
+  align-items: center;
+  height: 90px;
+  line-height: 90px;
+}
+header ul{
+  display: inline-flex;
+  list-style: none;
+  margin-left: auto; 
+  margin-right: 2vw;
+}
+header li{
+  display: inline;
+  float: right;
+  font-size: 
+  23px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-right: 2vw;
+  cursor: pointer;
+  transition: .5s;
+}
+.acesseSuaConta:hover,.cadastrase:hover{
+  text-decoration: underline;
+}
+
+.iconMenu{
+  font-size: 35px;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  cursor: pointer;
+}
+.title{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+.barraSeparaMenu{
+  width: 2px;
+  height: 40px;
+  background-color: black;
+  margin-right: 2vw;
+}
+.iconLupa{
+  font-size: 35px;
+  cursor: pointer;
+}
+@media (max-width: 700px){
+  header li{
+    font-size: 20px;
+  }
+  .title,.iconMenu{
+    font-size: 25px;
+  }
+  footer a{
+    font-size: 15px;
+  }
+}
+@media (max-width:600px){
+  header li{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 3vw;
+  }
+}
+@media (max-width:480px){
+  header{
+    line-height: 10px;
+  }
+  header li{
+    font-size: 13px;
+  }
+  .iconLupa{
+    font-size: 23px;
+  }
+}
+@media (max-width:440px){
+  .acesseSuaConta, .cadastrase{
+    display: none;
+  }
+  .iconLupa{
+    font-size: 30px;
+  }
+  
+}
