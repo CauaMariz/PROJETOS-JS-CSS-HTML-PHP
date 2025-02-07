@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@drawable/rounded_textview"
+    android:backgroundTint="#00FFFFFF"
+    app:circularflow_defaultAngle="20"
+    app:circularflow_defaultRadius="20px"
+    app:circularflow_radiusInDP="20px"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="744dp"
+        android:layout_height="1447dp"
+        android:src="@drawable/design_sem_nome__2___1_"
+        tools:layout_editor_absoluteX="-43dp"
+        tools:layout_editor_absoluteY="-562dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/rounded_textview"
+        android:backgroundTint="#008BC34A"
+        android:backgroundTintMode="screen"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="startProgram"
+        android:text="Iniciar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FBFBFB"
+        android:textColorLink="#F8FDF4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:circularflow_defaultRadius="20dp"
+        app:cornerRadius="20px"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textView4"
+
+        android:layout_width="312dp"
+        android:layout_height="148dp"
+        android:background="@drawable/rounded_textview"
+
+        android:gravity="center"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:text="Bem vindo ao programa de notas!"
+        android:textAlignment="center"
+
+
+        android:textColor="#E0DFDF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameUser"
+        android:layout_width="320dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/rounded_textview"
+        android:hint="Digite seu nome:"
+        android:paddingLeft="20px"
+        android:textColor="#F6F6F6"
+        android:textColorHint="#E4E4E4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <TextView
+        android:id="@+id/campError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_textview2"
+        android:backgroundTint="#000000"
+        android:textColor="#D7D7D7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameUser" />
+</androidx.constraintlayout.widget.ConstraintLayout>
