@@ -32,23 +32,70 @@ public class ProjectCalculadoraJava {
         switch (optionUser) {
             case "+":
                 double soma = newNumOne + newNumTwo;
-                JOptionPane.showMessageDialog(null, newNumOne + " + " + newNumTwo + " = " + String.format("%.2f",soma));
-                JOptionPane.showMessageDialog(null, "Programa finalizado! Obrigado pela preferencia " + nameUser + "!");
+                JOptionPane.showMessageDialog(null, newNumOne + " + " + newNumTwo + " = " + String.format("%.2f", soma));
+                int confirmUser = JOptionPane.showConfirmDialog(null, "Deseja continuar " + nameUser + "?" + JOptionPane.YES_NO_CANCEL_OPTION);
+
+                switch (confirmUser) {
+                    case JOptionPane.YES_OPTION:
+                        JOptionPane.showMessageDialog(null, "Recomecando programa...");
+                        main(null);
+                        break;
+                    case JOptionPane.NO_OPTION:
+                        JOptionPane.showMessageDialog(null, "Programa finalizado, obrigado pela preferencia " + nameUser + "!");
+                        break;
+                    case JOptionPane.CANCEL_OPTION:
+                        break;
+                }
                 break;
             case "-":
                 double subtr = newNumOne - newNumTwo;
-                JOptionPane.showMessageDialog(null, newNumOne + " - " + newNumTwo + " = " + String.format("%.2f",subtr));
-                JOptionPane.showMessageDialog(null, "Programa finalizado! Obrigado pela preferencia " + nameUser + "!");
+                JOptionPane.showMessageDialog(null, newNumOne + " - " + newNumTwo + " = " + String.format("%.2f", subtr));
+                int confirmUser1 = JOptionPane.showConfirmDialog(null, "Deseja continuar " + nameUser + "?" + JOptionPane.YES_NO_CANCEL_OPTION);
+
+                switch (confirmUser1) {
+                    case JOptionPane.YES_OPTION:
+                        JOptionPane.showMessageDialog(null, "Recomecando programa...");
+                        main(null);
+                        break;
+                    case JOptionPane.NO_OPTION:
+                        JOptionPane.showMessageDialog(null, "Programa finalizado, obrigado pela preferencia " + nameUser + "!");
+                        break;
+                    case JOptionPane.CANCEL_OPTION:
+                        break;
+                }
+
                 break;
             case "x":
                 double mult = newNumOne * newNumTwo;
-                JOptionPane.showMessageDialog(null, newNumOne + " x " + newNumTwo + " = " + String.format("%.2f",mult));
-                JOptionPane.showMessageDialog(null, "Programa finalizado! Obrigado pela preferencia " + nameUser + "!");
+                JOptionPane.showMessageDialog(null, newNumOne + " x " + newNumTwo + " = " + String.format("%.2f", mult));
+                int confirmUser2 = JOptionPane.showConfirmDialog(null, "Deseja continuar " + nameUser + "?" + JOptionPane.YES_NO_CANCEL_OPTION);
+                switch (confirmUser2) {
+                    case JOptionPane.YES_OPTION:
+                        JOptionPane.showMessageDialog(null, "Recomecando programa...");
+                        main(null);
+                        break;
+                    case JOptionPane.NO_OPTION:
+                        JOptionPane.showMessageDialog(null, "Programa finalizado, obrigado pela preferencia " + nameUser + "!");
+                        break;
+                    case JOptionPane.CANCEL_OPTION:
+                        break;
+                }
                 break;
             case "/":
                 double div = newNumOne / newNumTwo;
-                JOptionPane.showMessageDialog(null, newNumOne + " / " + newNumTwo + " = " + String.format("%.2f",div));
-                JOptionPane.showMessageDialog(null, "Programa finalizado! Obrigado pela preferencia " + nameUser + "!");
+                JOptionPane.showMessageDialog(null, newNumOne + " / " + newNumTwo + " = " + String.format("%.2f", div));
+                int confirmUser3 = JOptionPane.showConfirmDialog(null, "Deseja continuar " + nameUser + "?" + JOptionPane.YES_NO_CANCEL_OPTION);
+                switch (confirmUser3) {
+                    case JOptionPane.YES_OPTION:
+                        JOptionPane.showMessageDialog(null, "Recomecando programa...");
+                        main(null);
+                        break;
+                    case JOptionPane.NO_OPTION:
+                        JOptionPane.showMessageDialog(null, "Programa finalizado, obrigado pela preferencia " + nameUser + "!");
+                        break;
+                    case JOptionPane.CANCEL_OPTION:
+                        break;
+                }
                 break;
         }
 
